@@ -7,15 +7,19 @@ public class SelectionSorter {
   private int[] a;
 
   /**
-      Constructs a selection sorter.
-      @param anArray the array to sort
+   * Constructs a selection sorter.
+   * 
+   * @param anArray the array to sort
    */
-   public SelectionSorter(int[] anArray)
-   {
-      a = anArray;}
+  public SelectionSorter(int[] anArray) {
+    a = anArray;
+  }
 
-  for(int i = 0;i<=(array.length)-1;i++){
-  {
+  /**
+   * Sorts the array managed by this selection sorter.
+   */
+  public void sort() {
+    for (int i = 0; i <= (array.length) - 1; i++) {
       int element = array[i];
       int j = i;
       System.out.println("Progress: " + Arrays.toString(array));
@@ -24,6 +28,6 @@ public class SelectionSorter {
         j = j - 1;
       }
       array[j] = element;
+    }
   }
 }
-
